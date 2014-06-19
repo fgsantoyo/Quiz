@@ -41,7 +41,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    self.questionLabel.text = [self.questions objectAtIndex:0];
 }
 
 - (void)didReceiveMemoryWarning
@@ -51,11 +51,27 @@
 }
 
 - (IBAction)showQuestion:(id)sender {
+    //Step to the next question
+    self.currentQuestionIndex++;
     
+    //Am I past the last question?
+    if (self.currentQuestionIndex == [self.questions count]) {
+        self.currentQuestionIndex = 0;
+    }
+    
+    NSString *currentQuestion = [self.questions objectAtIndex:self.currentQuestionIndex];
+    
+    self.questionLabel.text = currentQuestion;
+    
+    self.answerLabel.text = @"???";
 }
 
 - (IBAction)showAnswer:(id)sender {
+    //What is the answer to the current question
+    NSString *answer = [self.answers objectAtIndex:self.currentQuestionIndex];
     
+    //Display it in the answer label
+    self.answerLabel.text = answer;
 }
 
 @end

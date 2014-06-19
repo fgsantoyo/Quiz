@@ -17,7 +17,7 @@
     
     FGQuizViewController *quizViewController = [[FGQuizViewController alloc] init];
     self.window.rootViewController = quizViewController;
-        
+    
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
