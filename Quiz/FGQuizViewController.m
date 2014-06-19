@@ -10,6 +10,14 @@
 
 @interface FGQuizViewController ()
 
+@property (nonatomic) int currentQuestionIndex;
+
+@property (nonatomic, copy) NSArray *questions;
+@property (nonatomic, copy) NSArray *answers;
+
+@property (weak, nonatomic) IBOutlet UILabel *questionLabel;
+@property (weak, nonatomic) IBOutlet UILabel *answerLabel;
+
 @end
 
 @implementation FGQuizViewController
@@ -18,7 +26,14 @@
 {
     self = [super initWithNibName:nibNameOrNil bundle:nibBundleOrNil];
     if (self) {
-        // Custom initialization
+        self.questions = @[@"From what cognac is made?",
+                           @"What is 7 + 7?",
+                           @"What is the capital of Vermont"];
+        
+        self.answers = @[@"Grapes",
+                         @"14",
+                         @"Montpelier"];
+        
     }
     return self;
 }

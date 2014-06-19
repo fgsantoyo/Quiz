@@ -7,13 +7,17 @@
 //
 
 #import "FGAppDelegate.h"
+#import "FGQuizViewController.h"
 
 @implementation FGAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
+    
+    FGQuizViewController *quizViewController = [[FGQuizViewController alloc] init];
+    self.window.rootViewController = quizViewController;
+        
     self.window.backgroundColor = [UIColor whiteColor];
     [self.window makeKeyAndVisible];
     return YES;
