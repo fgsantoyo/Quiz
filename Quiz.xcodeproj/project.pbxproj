@@ -19,6 +19,8 @@
 		B2EE9DFA19526C60003A807F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B2EE9DE219526C60003A807F /* UIKit.framework */; };
 		B2EE9E0219526C60003A807F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B2EE9E0019526C60003A807F /* InfoPlist.strings */; };
 		B2EE9E0419526C60003A807F /* QuizTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B2EE9E0319526C60003A807F /* QuizTests.m */; };
+		B2EE9E1019526DA8003A807F /* FGQuizViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B2EE9E0E19526DA8003A807F /* FGQuizViewController.m */; };
+		B2EE9E1119526DA8003A807F /* FGQuizViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = B2EE9E0F19526DA8003A807F /* FGQuizViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +50,9 @@
 		B2EE9DFF19526C60003A807F /* QuizTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuizTests-Info.plist"; sourceTree = "<group>"; };
 		B2EE9E0119526C60003A807F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B2EE9E0319526C60003A807F /* QuizTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuizTests.m; sourceTree = "<group>"; };
+		B2EE9E0D19526DA8003A807F /* FGQuizViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FGQuizViewController.h; sourceTree = "<group>"; };
+		B2EE9E0E19526DA8003A807F /* FGQuizViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FGQuizViewController.m; sourceTree = "<group>"; };
+		B2EE9E0F19526DA8003A807F /* FGQuizViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = FGQuizViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -111,6 +116,9 @@
 				B2EE9DEE19526C60003A807F /* FGAppDelegate.m */,
 				B2EE9DF019526C60003A807F /* Images.xcassets */,
 				B2EE9DE519526C60003A807F /* Supporting Files */,
+				B2EE9E0D19526DA8003A807F /* FGQuizViewController.h */,
+				B2EE9E0E19526DA8003A807F /* FGQuizViewController.m */,
+				B2EE9E0F19526DA8003A807F /* FGQuizViewController.xib */,
 			);
 			path = Quiz;
 			sourceTree = "<group>";
@@ -222,6 +230,7 @@
 			files = (
 				B2EE9DE919526C60003A807F /* InfoPlist.strings in Resources */,
 				B2EE9DF119526C60003A807F /* Images.xcassets in Resources */,
+				B2EE9E1119526DA8003A807F /* FGQuizViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -242,6 +251,7 @@
 			files = (
 				B2EE9DEB19526C60003A807F /* main.m in Sources */,
 				B2EE9DEF19526C60003A807F /* FGAppDelegate.m in Sources */,
+				B2EE9E1019526DA8003A807F /* FGQuizViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
